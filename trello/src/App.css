@@ -1,0 +1,308 @@
+
+#wrap_content {
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+#wrap_all {
+  display: flex;
+  
+}
+
+
+
+.column-input {
+  padding: 20px;
+}
+
+
+#click {
+  justify-content: flex-end;
+}
+
+h1 {
+  margin: 8px;
+    display: flex;
+    padding: 8px;
+}
+
+.column-input input {
+  margin-right: 10px;
+}
+
+.columns {
+  display: flex;
+  
+}
+
+.column {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width:250px; 
+  background: beige;
+}
+
+.column h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.todo-input {
+  margin-bottom: 10px;
+}
+
+.todo-input input {
+  margin-right: 10px;
+}
+
+.todo-input button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+li {
+  display: flex;
+  margin-bottom: 8px;
+  background-color: aqua;
+  transition: background-color 0.2s ease;
+  justify-content: space-between;
+  word-break: break-all;
+
+}
+
+li.dragging {
+  transform: 'rotate(10deg)';
+}
+
+#content {
+  width:250px;
+  padding:10px;
+}
+
+
+
+li button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  height:38px;
+}
+
+li button:hover {
+  background-color: #e53935;
+}
+
+li button:focus {
+  outline: none;
+}
+
+.column li.dragging {
+  background-color: cyan;
+}
+
+.column li.placeholder {
+  background-color: cyan;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+
+/* Custom styles for DatePicker input */
+.react-datepicker__input-container input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Custom styles for the DatePicker calendar */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+.react-datepicker__header {
+  background-color: #f0f0f0;
+  border-bottom: none;
+}
+
+.react-datepicker__month {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.react-datepicker__month .react-datepicker__week {
+  display: flex;
+}
+
+.react-datepicker__day-names {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-datepicker__day-name {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.react-datepicker__month .react-datepicker__day {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.react-datepicker__month .react-datepicker__day--selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.react-datepicker__month .react-datepicker__day--selected:hover {
+  background-color: #0056b3;
+}
+
+.react-datepicker__month .react-datepicker__day--disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.react-datepicker__month .react-datepicker__day--outside-month {
+  color: #999;
+}
+
+.react-datepicker__input-time-container {
+  display: none !important;
+}
+
+
+body {
+  color: rgba(0, 0, 0, 0.87);
+    margin: 0;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: #fafafa;
+    overflow-y: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+   
+}
+
+
+textarea {
+    resize: vertical;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+  width:230px; 
+}
+
+
+textarea[placeholder] {
+  padding: 10px;
+  color:white; 
+}
+
+
+#Add_a_card, #Add_column {
+  border: none;
+    padding: 10px 20px 10px; 
+    width: 150px;
+    font-size: 14px;
+    background: black;
+    color: white;
+    cursor: pointer; 
+}
+
+
+#column_add_a_card, #column_addtitle {
+  padding:0;
+  
+}
+#column_add_a_card span, #column_addtitle span {
+  font-size: 25px;
+  padding:2px
+}
+
+
+#Add_a_card:hover , #Add_column:hover{
+  background-color: #999;
+  color:black;
+}
+
+
+#button_two_choices {
+  background-color: rgb(5, 147, 230);
+  color: white; 
+  border:none; 
+  padding:10px 10px 10px 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#button_two_choices:hover {
+  background-color: #0056b3;
+
+}
+
+
+#button_two_choices:active{
+  background-color: white;
+  color:black; 
+}
+
+
+/* #wrap_edit_form {
+  display: flex;
+} */
+
+textarea:focus{
+  outline: none;
+}
+
+
+h3 {
+  word-wrap: break-word;
+}
+
+
+ul{
+  overflow-x: hidden;
+}
+
